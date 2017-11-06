@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: demo2-config-server
+#开启本地读取本地配置文件
+  profiles:
+    active: native
+#  指定配置文件的相对地址
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: ./cloud-config-repo
+server:
+  port: 9200
+
+
+
+
+
+
+#指定Eureka的注册地址（通过此地址进行服务的注册）
+eureka:
+  client:
+    serviceUrl:
+#    服务中心地址
+      defaultZone: http://localhost:9100/eureka/
+
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30

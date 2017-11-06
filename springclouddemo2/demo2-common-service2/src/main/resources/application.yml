@@ -1,0 +1,9 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9100/eureka/
+spring:
+  application:
+    name: common-service2
+server:
+  port: 9500
