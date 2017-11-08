@@ -18,8 +18,9 @@ public class HelloController {
 
     @RequestMapping("default")
     public String first(@RequestParam String name) {
-        return "hi "+name+",i am from port:" +port;
+        return "hi " + name + ",i am from port: " + port;
     }
+
     @RequestMapping("friend")
     public String friend() {
         return "Hello Friend!";

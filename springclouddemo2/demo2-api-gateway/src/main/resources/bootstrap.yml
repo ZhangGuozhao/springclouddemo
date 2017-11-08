@@ -1,14 +1,12 @@
 spring:
-  application:
-    name: demo2-api-gateway
-
   cloud:
       config:
         uri:  http://localhost:9200
         name: cloud-config
         profile: gateway
-#server:
-#  port: 9300
+  application:
+    name: demo2-api-gateway
+
 #指定Eureka的注册地址（通过此地址进行服务的注册）
 eureka:
   client:

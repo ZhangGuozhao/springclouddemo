@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: common-service1
+  cloud:
+    config:
+      uri: http://localhost:9200
+      name: cloud-config
+      profile: service1
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9100/eureka/
