@@ -10,3 +10,9 @@ spring:
       uri: http://localhost:9200
       name: cloud-config
       profile: service2,common
+
+
+#      management.security.enabled=false
+management:
+  security:
+    enabled: false

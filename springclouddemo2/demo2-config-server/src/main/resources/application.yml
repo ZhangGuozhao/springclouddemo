@@ -11,6 +11,12 @@ spring:
         native:
           search-locations: ./cloud-config-repo
       uri: http://localhost:9200
+##     rabbitmq配置
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+##    username:
+##    password:
 server:
   port: 9200
 
@@ -27,3 +33,5 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 10
     lease-expiration-duration-in-seconds: 30
+
+

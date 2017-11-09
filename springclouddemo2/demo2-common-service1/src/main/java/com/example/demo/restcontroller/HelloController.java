@@ -15,6 +15,14 @@ public class HelloController {
     @Value("${server.port}")
     private String port;
 
+    @Value("${foo}")
+    private String foo;
+
+    @RequestMapping("getFoo")
+    public String getFoo() {
+        return  foo;
+    }
+
     @RequestMapping("default")
     public String first(@RequestParam String name) {
         return "hi "+name+",i am from port: " + port;
